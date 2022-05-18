@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{565CFAD0-5BB9-46AD-9292-A06CB5A90F2F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ZuzinaMarathphon</RootNamespace>
+    <AssemblyName>ZuzinaMarathphon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="blag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="blag.Designer.cs">
+      <DependentUpon>blag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMI.Designer.cs">
+      <DependentUpon>BMI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMR.Designer.cs">
+      <DependentUpon>BMR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dobpol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dobpol.Designer.cs">
+      <DependentUpon>dobpol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit.Designer.cs">
+      <DependentUpon>edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="info.Designer.cs">
+      <DependentUpon>info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inventar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inventar.Designer.cs">
+      <DependentUpon>inventar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="long.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="long.Designer.cs">
+      <DependentUpon>long.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainscreen.Designer.cs">
+      <DependentUpon>mainscreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarathonSkills2022_2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarathonSkills2022_2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuadmin.Designer.cs">
+      <DependentUpon>menuadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menukoord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menukoord.Designer.cs">
+      <DependentUpon>menukoord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myrez.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="myrez.Designer.cs">
+      <DependentUpon>myrez.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myspon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="myspon.Designer.cs">
+      <DependentUpon>myspon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obzorspon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="obzorspon.Designer.cs">
+      <DependentUpon>obzorspon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="podregbeg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="podregbeg.Designer.cs">
+      <DependentUpon>podregbeg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="podspon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="podspon.Designer.cs">
+      <DependentUpon>podspon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="postinvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="postinvent.Designer.cs">
+      <DependentUpon>postinvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proverka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proverka.Designer.cs">
+      <DependentUpon>Proverka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="redblag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="redblag.Designer.cs">
+      <DependentUpon>redblag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="redpb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="redpb.Designer.cs">
+      <DependentUpon>redpb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="redpol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="redpol.Designer.cs">
+      <DependentUpon>redpol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="regbeg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regbeg.Designer.cs">
+      <DependentUpon>regbeg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="regmar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regmar.Designer.cs">
+      <DependentUpon>regmar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="res.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="res.Designer.cs">
+      <DependentUpon>res.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sert.Designer.cs">
+      <DependentUpon>sert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="spon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="spon.Designer.cs">
+      <DependentUpon>spon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uprbeg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uprbeg.Designer.cs">
+      <DependentUpon>uprbeg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uprbeg2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uprbeg2.Designer.cs">
+      <DependentUpon>uprbeg2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uprblorg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uprblorg.Designer.cs">
+      <DependentUpon>uprblorg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uprpol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uprpol.Designer.cs">
+      <DependentUpon>uprpol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="valanter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="valanter.Designer.cs">
+      <DependentUpon>valanter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zagval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zagval.Designer.cs">
+      <DependentUpon>zagval.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="blag.resx">
+      <DependentUpon>blag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMI.resx">
+      <DependentUpon>BMI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMR.resx">
+      <DependentUpon>BMR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dobpol.resx">
+      <DependentUpon>dobpol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit.resx">
+      <DependentUpon>edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="info.resx">
+      <DependentUpon>info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventar.resx">
+      <DependentUpon>inventar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="long.resx">
+      <DependentUpon>long.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainscreen.resx">
+      <DependentUpon>mainscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuadmin.resx">
+      <DependentUpon>menuadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menukoord.resx">
+      <DependentUpon>menukoord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="myrez.resx">
+      <DependentUpon>myrez.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="myspon.resx">
+      <DependentUpon>myspon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obzorspon.resx">
+      <DependentUpon>obzorspon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="podregbeg.resx">
+      <DependentUpon>podregbeg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="podspon.resx">
+      <DependentUpon>podspon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="postinvent.resx">
+      <DependentUpon>postinvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Proverka.resx">
+      <DependentUpon>Proverka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="redblag.resx">
+      <DependentUpon>redblag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="redpb.resx">
+      <DependentUpon>redpb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="redpol.resx">
+      <DependentUpon>redpol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="regbeg.resx">
+      <DependentUpon>regbeg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="regmar.resx">
+      <DependentUpon>regmar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res.resx">
+      <DependentUpon>res.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sert.resx">
+      <DependentUpon>sert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="spon.resx">
+      <DependentUpon>spon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uprbeg.resx">
+      <DependentUpon>uprbeg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uprbeg2.resx">
+      <DependentUpon>uprbeg2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uprblorg.resx">
+      <DependentUpon>uprblorg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uprpol.resx">
+      <DependentUpon>uprpol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="valanter.resx">
+      <DependentUpon>valanter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zagval.resx">
+      <DependentUpon>zagval.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MarathonSkills2022_2DataSet.xsc">
+      <DependentUpon>MarathonSkills2022_2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MarathonSkills2022_2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarathonSkills2022_2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MarathonSkills2022_2DataSet.xss">
+      <DependentUpon>MarathonSkills2022_2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-03-08 192319.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-03-08 191950.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-03-08 192541.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-03-08 192744.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-03-08 192942.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-03-08 193217.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-03-08 193406.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-03-08 193559.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-03-08 193737.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-toilets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-medical %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-energy-bars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-drinks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2022-04-11 180148.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
